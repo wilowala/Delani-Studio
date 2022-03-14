@@ -4,3 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.input ::-webkit-input-placeholder{
+    color: white !important;
+}
