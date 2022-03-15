@@ -86,3 +86,37 @@ $(document).ready(function() {
     }); 
 
 });
+
+// Form Validation
+
+const form = document.querySelector("#mc-embedded-subscribe-form");
+const name = document.querySelector("#mce-FNAME");
+const email = document.querySelector("#mce-EMAIL");
+const message = document.querySelector("#mce-MMERGE3");
+
+form.addEventListener("submit", validateForm);
+
+function validateForm(e) {
+    e.preventDefault();
+
+    let userName = name.value.trim();
+    let userMail = email.value.toLowerCase();
+    let text = message.value;
+    let validMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (userName === "") {
+        alert("Please enter a valid name");
+    }
+    if (userMail === "") {
+        alert("Please enter a valid email");
+    }
+    if (userMail.match(validMail)) {
+        alert ("Your email has been received successfully");
+    }else{
+        alert("Please enter a valid email")
+    }
+    if (text === "") {
+        alert("Please enter a valid message"); 
+    }
+
+}
