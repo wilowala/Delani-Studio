@@ -7,3 +7,41 @@
 .input ::-webkit-input-placeholder{
     color: white !important;
 }
+
+#do{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+#design, #product, #dev{
+    display: none;
+    cursor: pointer;
+}
+
+.bound{
+    border: 0.313rem solid white !important;
+    width: 80%;
+    height: 80%;
+    margin-top: 1.7rem;
+    margin-left: 2rem;
+}
+
+.bound h3{
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    padding-top: 3rem;
+}
+
+.class1, .class2, .class3, .class4{
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.class5, .class6, .class7, .class8{
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    opacity: 0;
+}
